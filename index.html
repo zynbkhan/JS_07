@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Question # 4: -->
+	<h1>Enter Population Records</h1>
+
+    <form id="populationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" required>
+            <option value="High School">High School</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Masters">Masters</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+
+        <label for="profession">Profession:</label>
+        <select id="profession" required>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Artist">Artist</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Saved Records:</h2>
+    <div id="records"></div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>
